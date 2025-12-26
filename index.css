@@ -31,16 +31,94 @@ body {
 .firstSectionCon {
   width: 100%;
   height: 100vh;
-  background-image: url(assets/Zukunftsbild_Deutschland_2045.jpg);
+  background-image: url(Zukunftsbild_Deutschland_2045.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .textCon {
   width: auto;
-  height: auto;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .textConHeader {
   color: #ffffff;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.textConDescription {
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.btnInfoCon {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.infoCon {
+  width: 230px;
+  height: 100px;
+
+  /* Blur Effect */
+  --webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  background-color: rgba(232, 232, 237, 0.7);
+  border-radius: 32px;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.11);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.infoFirstTextCon {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.infoIcon {
+  width: 25px;
+  height: 25px;
+}
+
+.infoFirstText {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 450;
+}
+
+.infoSecondTextCon {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoSecondText {
+  color: #000000;
+  font-size: 23px;
+  font-weight: 450;
+}
+
+.blueText {
+    color: #0071E3;
+    font-weight: 600;
 }
