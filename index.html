@@ -9,8 +9,9 @@
       href="assets/icons/favicon.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <script type="module" src="sliderInfo.js"></script>
   </head>
   <body>
     <div class="firstSectionCon">
@@ -36,7 +37,7 @@
               <span class="infoFirstText">Ø Alter</span>
             </div>
             <div class="infoSecondTextCon">
-              <span class="infoSecondText">52 Jahre</span>
+              <span class="infoSecondText">ca. 45 Jahre</span>
             </div>
           </div>
           <div class="infoCon">
@@ -53,7 +54,7 @@
               <span class="infoFirstText">Fachkräftemangel</span>
             </div>
             <div class="infoSecondTextCon">
-              <span class="infoSecondText">2.8 Mio.</span>
+              <span class="infoSecondText">ca. 5-7 Mio.</span>
             </div>
           </div>
           <div class="infoCon">
@@ -70,7 +71,7 @@
               <span class="infoFirstText">Pflegebedarf</span>
             </div>
             <div class="infoSecondTextCon">
-              <span class="infoSecondText">+60%</span>
+              <span class="infoSecondText">+28%</span>
             </div>
           </div>
           <a class="infoBtn" href="https://google.com">
@@ -89,35 +90,66 @@
       </div>
     </div>
     <div class="secondSectionCon">
-      <span class="secondSectionHeader"
-        >Was wäre dein Lösung für Deutschland 2045?</span
+      <span class="sectionHeader"
+        >Was wäre deine Lösung für Deutschland 2045?</span
       >
       <div class="secondSectionBtnCon">
-        <button class="secondSectionBtn active">Optimistisch</button>
-        <button class="secondSectionBtn">Realistisch</button>
-        <button class="secondSectionBtn">Kritisch</button>
+        <button class="secondSectionBtn" id="secondSectionBtnOne">Reform-Offensive</button>
+        <button class="secondSectionBtn" id="secondSectionBtnTwo">Schrittweise Anpassung</button>
+        <button class="secondSectionBtn" id="secondSectionBtnThree">Stillstand & Krise</button>
       </div>
+      <span class="secondSectionDescription" id="secondSectionDescription"
+        >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur porro facere mollitia, praesentium voluptatum, error aut officia inventore dicta, rerum reprehenderit? Voluptatibus commodi, soluta temporibus eius laborum iure sint nulla?</span
+      >
     </div>
     <div class="thirdSectionCon">
-      <span class="thirdSectionHeader"
+      <span class="sectionHeader"
         >Deine Stellschrauben für die Zukunft</span
       >
       <div class="thirdSectionInfoCon">
         <div class="thirdSectionInfoElement">
-          <span class="thirdSectionInfoElementText">Zuwanderung</span>
-          <div class="thirdSectionInfoSliderCon"></div>
+          <div class="thirdSectionInfoElementTextCon">
+            <span class="thirdSectionInfoElementText">Zuwanderung</span>
+          </div>
+          <div class="thirdSectionInfoSliderCon">
+            <div class="infoSliderCon">
+              <div class="infoSlider" id="zuwanderungSlider"></div>
+            </div>
+            <span class="thirdSectionInfoSliderText" id="zuwanderungText">Hoch / gezielt</span>
+          </div>
         </div>
         <div class="thirdSectionInfoElement">
-          <span class="thirdSectionInfoElementText">Automatisierung</span>
-          <div class="thirdSectionInfoSliderCon"></div>
+          <div class="thirdSectionInfoElementTextCon">
+            <span class="thirdSectionInfoElementText">Automatisierung</span>
+          </div>
+          <div class="thirdSectionInfoSliderCon">
+            <div class="infoSliderCon">
+              <div class="infoSlider" id="automatisierungSlider"></div>
+            </div>
+            <span class="thirdSectionInfoSliderText" id="automatisierungText">Stark</span>
+          </div>
         </div>
         <div class="thirdSectionInfoElement">
-          <span class="thirdSectionInfoElementText">Weiterbildung</span>
-          <div class="thirdSectionInfoSliderCon"></div>
+          <div class="thirdSectionInfoElementTextCon">
+            <span class="thirdSectionInfoElementText">Fachkräftemangel</span>
+          </div>
+          <div class="thirdSectionInfoSliderCon">
+            <div class="infoSliderCon">
+              <div class="infoSlider" id="fachkraeftemangelSlider"></div>
+            </div>
+            <span class="thirdSectionInfoSliderText" id="fachkraeftemangelText">Niedrig</span>
+          </div>
         </div>
         <div class="thirdSectionInfoElement">
-          <span class="thirdSectionInfoElementText">Arbeitszeitmodelle</span>
-          <div class="thirdSectionInfoSliderCon"></div>
+          <div class="thirdSectionInfoElementTextCon">
+            <span class="thirdSectionInfoElementText">Arbeitszeitmodelle</span>
+          </div>
+          <div class="thirdSectionInfoSliderCon">
+            <div class="infoSliderCon">
+              <div class="infoSlider" id="arbeitszeitmodelleSlider"></div>
+            </div>
+            <span class="thirdSectionInfoSliderText" id="arbeitszeitmodelleText">Flexibel</span>
+          </div>
         </div>
       </div>
     </div>
@@ -130,8 +162,8 @@
       </div>
       <div class="lastFooterSec">
         <span class="footerTextTwo"
-          >Alle Rechte vorbehalten. | © Luca Gloger & Lennox Schmidt -
-          2025</span
+          >Alle Rechte vorbehalten. | © Luca Gloger & Ben Rose & Tim Ruppe &
+          Lennox Schmidt - 2026</span
         >
         <div class="secondCon">
           <a
