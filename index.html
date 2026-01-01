@@ -3,18 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Detuschland 2045 - Herausforderungen & Chancen der Zukunft</title>
+    <title>Detuschland in 2045</title>
     <link
       rel="shortcut icon"
-      href="assets/icons/favicon.png"
+      href="assets/favicon/favicon.png"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <script type="module" src="sliderInfo.js"></script>
+    <script type="module" src="animation.js"></script>
   </head>
   <body>
-    <div class="firstSectionCon">
+    <div class="firstSectionCon" id="firstSectionCon">
       <div class="textCon">
         <h1 class="textConHeader">Deutschland 2045</h1>
         <h3 class="textConDescription">
@@ -90,22 +91,34 @@
       </div>
     </div>
     <div class="secondSectionCon">
-      <span class="sectionHeader"
-        >Was wäre deine Lösung für Deutschland 2045?</span
-      >
       <div class="secondSectionBtnCon">
-        <button class="secondSectionBtn" id="secondSectionBtnOne">Reform-Offensive</button>
-        <button class="secondSectionBtn" id="secondSectionBtnTwo">Schrittweise Anpassung</button>
-        <button class="secondSectionBtn" id="secondSectionBtnThree">Stillstand & Krise</button>
+        <span class="sectionHeader"
+          >Was wäre deine Lösung für Deutschland 2045?</span
+        >
+        <div class="secondSectionBtnGrid">
+          <button class="secondSectionBtn" id="secondSectionBtnOne">
+            Variante 1
+          </button>
+          <button class="secondSectionBtn" id="secondSectionBtnTwo">
+            Variante 2
+          </button>
+          <button class="secondSectionBtn" id="secondSectionBtnThree">
+            Variante 3
+          </button>
+        </div>
       </div>
-      <span class="secondSectionDescription" id="secondSectionDescription"
-        >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur porro facere mollitia, praesentium voluptatum, error aut officia inventore dicta, rerum reprehenderit? Voluptatibus commodi, soluta temporibus eius laborum iure sint nulla?</span
+      <span class="descriptionHeader" id="secondSectionHeader"
+        >Schrittweise Anpassung</span
+      >
+      <span class="sectionDescription" id="secondSectionDescription"
+        >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+        porro facere mollitia, praesentium voluptatum, error aut officia
+        inventore dicta, rerum reprehenderit? Voluptatibus commodi, soluta
+        temporibus eius laborum iure sint nulla?</span
       >
     </div>
     <div class="thirdSectionCon">
-      <span class="sectionHeader"
-        >Deine Stellschrauben für die Zukunft</span
-      >
+      <span class="sectionHeader">Deine Stellschrauben für die Zukunft</span>
       <div class="thirdSectionInfoCon">
         <div class="thirdSectionInfoElement">
           <div class="thirdSectionInfoElementTextCon">
@@ -115,7 +128,9 @@
             <div class="infoSliderCon">
               <div class="infoSlider" id="zuwanderungSlider"></div>
             </div>
-            <span class="thirdSectionInfoSliderText" id="zuwanderungText">Hoch / gezielt</span>
+            <span class="thirdSectionInfoSliderText" id="zuwanderungText"
+              >Hoch / gezielt</span
+            >
           </div>
         </div>
         <div class="thirdSectionInfoElement">
@@ -126,7 +141,9 @@
             <div class="infoSliderCon">
               <div class="infoSlider" id="automatisierungSlider"></div>
             </div>
-            <span class="thirdSectionInfoSliderText" id="automatisierungText">Stark</span>
+            <span class="thirdSectionInfoSliderText" id="automatisierungText"
+              >Stark</span
+            >
           </div>
         </div>
         <div class="thirdSectionInfoElement">
@@ -137,7 +154,9 @@
             <div class="infoSliderCon">
               <div class="infoSlider" id="fachkraeftemangelSlider"></div>
             </div>
-            <span class="thirdSectionInfoSliderText" id="fachkraeftemangelText">Niedrig</span>
+            <span class="thirdSectionInfoSliderText" id="fachkraeftemangelText"
+              >Niedrig</span
+            >
           </div>
         </div>
         <div class="thirdSectionInfoElement">
@@ -148,7 +167,9 @@
             <div class="infoSliderCon">
               <div class="infoSlider" id="arbeitszeitmodelleSlider"></div>
             </div>
-            <span class="thirdSectionInfoSliderText" id="arbeitszeitmodelleText">Flexibel</span>
+            <span class="thirdSectionInfoSliderText" id="arbeitszeitmodelleText"
+              >Flexibel</span
+            >
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@ const buttonOne = document.getElementById("secondSectionBtnOne");
 const buttonTwo = document.getElementById("secondSectionBtnTwo");
 const buttonThree = document.getElementById("secondSectionBtnThree");
 
+const secondSectionHeader = document.getElementById("secondSectionHeader");
 const secondSectionDescription = document.getElementById(
   "secondSectionDescription"
 );
@@ -24,10 +25,14 @@ const arbeitszeitmodelleText = document.getElementById(
   "arbeitszeitmodelleText"
 );
 
+const optionOneName = "Reform-Offensive";
+const optionTwoName = "Schrittweise Anpassung";
+const optionThreeName = "Stillstand & Krise";
+
 const optionOneDescription =
   "Deutschland handelt früh: Bildung, Zuwanderung und KI werden gezielt gesteuert. Staat und Wirtschaft investieren gemeinsam, Bürokratie wird abgebaut. Das senkt den Fachkräftemangel deutlich und stabilisiert soziale Systeme.";
 const optionTwoDescription =
-  "Deutschland setzt Reformen um, aber langsamer und oft kompromissgetrieben. Es gibt Verbesserungen bei Ausbildung und Digitalisierung, jedoch bleiben Engpässe in Pflege und Handwerk spürbar. Die Lage stabilisiert sich, aber nicht überall.Deutschland setzt Reformen um, aber langsamer und oft kompromissgetrieben. Es gibt Verbesserungen bei Ausbildung und Digitalisierung, jedoch bleiben Engpässe in Pflege und Handwerk spürbar. Die Lage stabilisiert sich, aber nicht überall.";
+  "Deutschland setzt Reformen um, aber langsamer und oft kompromissgetrieben. Es gibt Verbesserungen bei Ausbildung und Digitalisierung, jedoch bleiben Engpässe in Pflege und Handwerk spürbar. Die Lage stabilisiert sich, aber nicht überall.";
 const optionThreeDescription =
   "Reformen werden verschleppt. Bürokratie bleibt hoch, Weiterbildung und Digitalisierung kommen zu spät. Zuwanderung wird nicht aktiv gesteuert, Pflege und Bildung geraten unter Druck. Unternehmen verlagern Aufgaben, soziale Spannungen steigen.";
 
@@ -41,7 +46,8 @@ function optionOne() {
   buttonTwo.classList.remove("active");
   buttonThree.classList.remove("active");
 
-  secondSectionDescription.textContent = optionOneDescription;
+  secondSectionHeader.innerHTML = optionOneName;
+  secondSectionDescription.innerHTML = optionOneDescription;
 
   zuwanderungSlider.style.width = "100%";
   zuwanderungText.textContent = "Hoch / gezielt";
@@ -61,7 +67,8 @@ function optionTwo() {
   buttonOne.classList.remove("active");
   buttonThree.classList.remove("active");
 
-  secondSectionDescription.textContent = optionTwoDescription;
+  secondSectionHeader.innerHTML = optionTwoName;
+  secondSectionDescription.innerHTML = optionTwoDescription;
 
   zuwanderungSlider.style.width = "50%";
   zuwanderungText.textContent = "Mittel";
@@ -81,10 +88,11 @@ function optionThree() {
   buttonOne.classList.remove("active");
   buttonTwo.classList.remove("active");
 
-  secondSectionDescription.textContent = optionThreeDescription;
+  secondSectionHeader.innerHTML = optionThreeName;
+  secondSectionDescription.innerHTML = optionThreeDescription;
 
   zuwanderungSlider.style.width = "20%";
-  zuwanderungText.textContent = "Niedrig";
+  zuwanderungText.textContent = "Niedrig / unkoordiniert";
 
   automatisierungSlider.style.width = "10%";
   automatisierungText.textContent = "Gering / ungleich";
