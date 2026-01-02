@@ -39,6 +39,47 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* ========== GLOBAL STYLES ========== */
+.section {
+  width: 100%;
+  max-width: 812px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 20px 0 20px;
+  box-sizing: border-box;
+  margin-bottom: 70px;
+}
+
+.sectionTextCon {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 32px;
+}
+
+.sectionTextContentCon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 810px) {
+  .sectionTextCon {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
 /* ========== GLOBAL TEXT STYLES ========== */
 
 .sectionHeader {
@@ -89,6 +130,11 @@ body {
   line-height: 1.4444444444;
 }
 
+.highlight {
+  color: #008000;
+  font-weight: 600;
+}
+
 @media only screen and (max-width: 1023px) {
   .sectionHeader {
     font-size: 1.5rem;
@@ -115,7 +161,7 @@ body {
 
 /* ========== FIRST SECTION ========== */
 
-.firstSectionCon {
+.firstSection {
   width: 100%;
   height: 100vh;
   background-image: url(../assets/images/Zukunftsbild_Deutschland_2_2045.jpg);
@@ -399,7 +445,7 @@ body {
 
 /* ========== SECOND SECTION ========== */
 
-.secondSectionCon {
+.secondSection {
   width: 100%;
   max-width: 812px;
   height: auto;
@@ -482,7 +528,7 @@ body {
 
 /* ========== THIRD SECTION ========== */
 
-.thirdSectionCon {
+.thirdSection {
   width: 100%;
   max-width: 1255px;
   height: auto;
@@ -492,6 +538,7 @@ body {
   flex-direction: column;
   padding: 0 20px 0 20px;
   box-sizing: border-box;
+  margin-bottom: 70px;
 }
 
 .thirdSectionInfoCon {
