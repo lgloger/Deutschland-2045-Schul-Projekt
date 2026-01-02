@@ -53,6 +53,14 @@ body {
   margin-bottom: 70px;
 }
 
+.secSection {
+  max-width: calc(812px - 30px);
+  background-color: #f8f8f8;
+  box-sizing: border-box;
+
+  padding: 30px;
+}
+
 .sectionTextCon {
   width: 100%;
   height: auto;
