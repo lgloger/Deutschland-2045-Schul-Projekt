@@ -121,9 +121,10 @@ body {
   background-image: url(../assets/images/Zukunftsbild_Deutschland_2_2045.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   box-sizing: border-box;
   margin-bottom: 40px;
-  transition: 0.5s ease-in-out;
+  transition: background-image 1.5s ease;
 }
 
 .textCon {
@@ -284,7 +285,7 @@ body {
 
 /* ========== FIRST SECTION RESPONSIVE ========== */
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1023px) {
   .textConHeader {
     font-size: 55px;
   }
@@ -325,7 +326,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 734px) {
+@media only screen and (max-width: 740px) {
   .textConHeader {
     font-size: 45px;
   }
@@ -367,12 +368,32 @@ body {
 }
 
 @media only screen and (max-width: 459px) {
-  .textCon {
-    height: 30%;
+  .btnInfoCon {
+    padding: 0 10px;
+    overflow: hidden;
   }
 
-  .btnInfoCon {
-    height: 70%;
+  .infoGridCon {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 15px;
+  }
+
+  .infoCon,
+  .infoBtn {
+    flex: 0 0 auto;
+    width: 80%;
+  }
+
+  .infoGridCon::-webkit-scrollbar {
+    display: none;
+  }
+  .infoGridCon {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }
 
@@ -441,7 +462,15 @@ body {
   transition: 0.15s ease-in-out;
 }
 
-.secondSectionBtn:hover {
+@media (hover: hover) {
+  .secondSectionBtn:hover {
+    cursor: pointer;
+    font-style: italic;
+    transform: scale(1.03);
+  }
+}
+
+.secondSectionBtn:active {
   cursor: pointer;
   font-style: italic;
   transform: scale(1.03);

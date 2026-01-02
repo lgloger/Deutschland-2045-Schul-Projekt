@@ -25,9 +25,9 @@ const arbeitszeitmodelleText = document.getElementById(
   "arbeitszeitmodelleText"
 );
 
-const optionOneName = "Reform-Offensive";
-const optionTwoName = "Schrittweise Anpassung";
-const optionThreeName = "Stillstand & Krise";
+const optionOneName = "(1) Reform-Offensive";
+const optionTwoName = "(2) Schrittweise Anpassung";
+const optionThreeName = "(3) Stillstand & Krise";
 
 const optionOneDescription =
   "Deutschland handelt früh: Bildung, Zuwanderung und KI werden gezielt gesteuert. Staat und Wirtschaft investieren gemeinsam, Bürokratie wird abgebaut. Das senkt den Fachkräftemangel deutlich und stabilisiert soziale Systeme.";
@@ -104,4 +104,4 @@ function optionThree() {
   arbeitszeitmodelleText.textContent = "Starr";
 }
 
-optionTwo();
+optionOne();

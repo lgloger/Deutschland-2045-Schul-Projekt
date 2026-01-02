@@ -70,9 +70,15 @@
   transition: 0.15s ease-in-out;
 }
 
-.footerIconLink:hover {
-  background-color: var(--glass-effect-hover-color);
+@media (hover: hover) {
+  .footerIconLink:hover {
+    background-color: var(--glass-effect-hover-color);
+  }
 }
+
+.footerIconLink:active {
+    background-color: var(--glass-effect-hover-color);
+  }
 
 .footerIcon {
   width: 20px;
