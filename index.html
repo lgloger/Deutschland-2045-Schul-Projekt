@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -25,6 +25,16 @@
       rel="preload"
       as="image"
       href="assets/images/Zukunftsbild_Deutschland_2_2045.png"
+    />
+    <link
+      rel="preload"
+      as="video"
+      href="assets/videos/CityVideoOne.mp4"
+    />
+    <link
+      rel="preload"
+      as="video"
+      href="assets/videos/CityVideoTwo.mp4"
     />
   </head>
   <body>
@@ -210,6 +220,12 @@
       </div>
     </div>
     <div class="section">
+      <video class="sectionVideo" autoplay muted loop>
+        <source src="assets/videos/CityVideoOne.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="section">
       <span class="sectionHeader">Deutschland im demografischen Umbruch</span>
       <div class="sectionTextCon">
         <div class="sectionTextContentCon">
@@ -245,12 +261,16 @@
           <span class="highlight">7 Millionen Erwerbstätige</span> durch den
           Renteneintritt der Babyboomer.</span
         >
-        <span class="descriptionHeader" style="margin-top: 7px;">Der wirtschaftliche Preis</span>
+        <span class="descriptionHeader" style="margin-top: 7px"
+          >Der wirtschaftliche Preis</span
+        >
         <span class="sectionDescription"
           >Schon heute kostet der Wertschöpfungsverlust durch unbesetzte Stellen
           rund <span class="highlight">49 Milliarden Euro</span> pro Jahr.</span
         >
-        <span class="descriptionHeader" style="margin-top: 7px;">Die KI-Lösung</span>
+        <span class="descriptionHeader" style="margin-top: 7px"
+          >Die KI-Lösung</span
+        >
         <span class="sectionDescription"
           >KI kann Arbeitsprozesse effizienter gestalten, Routineaufgaben
           automatisieren und so Fachkräfte massiv entlasten. Besonders in der
@@ -258,6 +278,12 @@
           für den Menschen bleibt.</span
         >
       </div>
+    </div>
+    <div class="section">
+      <video class="sectionVideo" autoplay muted loop>
+        <source src="assets/videos/CityVideoTwo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
     <div class="section" style="margin-bottom: 0" id="partySection">
       <span class="sectionHeader"
@@ -295,10 +321,10 @@
     <div class="footer">
       <div class="firstFooterSec">
         <span class="footerHeader">Rechtliches</span>
-        <a class="footerText" href="impressum.html"
-          >Impressum</a
-        >
-        <a class="footerText" href="documentation/Projektdokumentation_Deutschland_2045.pdf"
+        <a class="footerText" href="impressum.html">Impressum</a>
+        <a
+          class="footerText"
+          href="documentation/Projektdokumentation_Deutschland_2045.pdf"
           >Analyse & Quellen</a
         >
       </div>

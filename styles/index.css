@@ -139,6 +139,12 @@ body {
   flex-direction: column;
 }
 
+.sectionVideo {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
 .imageSection {
   width: 100%;
   max-width: 1255px;
@@ -156,7 +162,7 @@ body {
   width: calc(50% - 8px);
   max-width: 450px;
   height: auto;
-  border-radius: 8px;
+  border-radius: 16px;
   object-fit: cover;
 }
 
